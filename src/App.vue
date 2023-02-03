@@ -3,16 +3,17 @@
     <comp-header />
     <hr />
     <navbar />
-    <router-view />
+    <keep-alive>
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 
 <script>
 import CompHeader from "./components/Header.vue";
 import Navbar from "./components/Navbar.vue";
-import Home from "./views/Home.vue";
 export default {
-  components: { CompHeader, Navbar, Home }
+  components: { CompHeader, Navbar }
 };
 </script>
 

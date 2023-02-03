@@ -9,6 +9,9 @@
       class="navbar__item"
       ><a>Social media app</a></router-link
     >
+    <router-link tag="li" :to="{ name: 'post-manager' }" class="navbar__item"
+      ><a>Post manager</a></router-link
+    >
   </nav>
 </template>
 
@@ -29,6 +32,10 @@ export default {
 .navbar__item {
   list-style: none;
   padding: 0 15px;
+}
+
+.navbar__item:hover {
+  text-decoration: underline;
 }
 
 .navbar__item a {

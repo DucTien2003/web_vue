@@ -58,7 +58,7 @@ export default {
       isEdit: false,
       indexEditing: 0,
       inputValue: "",
-      listPost: ["say hello", "hello world"]
+      listPost: ["hello world", "say hello"]
     };
   },
   methods: {
